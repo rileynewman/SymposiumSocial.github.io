@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container>
-    <background-image:url(IMG_0004.jpg)
+    <background-image:url('IMG_0004.jpg')
     <h1>Quercus Social Club</h1>
     <h2><a href="#">About</a></h2>
     <h2><a href="#"></a>Calendar</a></h2>

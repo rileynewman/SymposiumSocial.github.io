@@ -1,9 +1,12 @@
-# SymposiumSocial
- import React from "react";
-import { cn } from "@/lib/utils";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quercus Social Club</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
 
-export default function HomePage() {
-  return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-cream text-black">
       <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">
         Quercus Social Club
@@ -16,15 +19,5 @@ export default function HomePage() {
         />
       </a>
     </div>
-  );
-}
 
-// Tailwind extension in tailwind.config.js should include:
-// theme: {
-//   extend: {
-//     colors: {
-//       cream: '#fdf6e3',
-//     },
-//   },
-// }
 

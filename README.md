@@ -7,7 +7,7 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <background-image:url()
+    <background-image:url(IMG_0004.jpg)
     <h1>Quercus Social Club</h1>
     <h2>About</h2>
     <h2>Calendar</h2>

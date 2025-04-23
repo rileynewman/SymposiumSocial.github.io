@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  cursor: url(IMG_0436.PNG), auto;
+  cursor: url('IMG_0436.PNG'), auto;
 }
 
 .acorn {

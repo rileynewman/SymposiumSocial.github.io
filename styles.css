@@ -25,6 +25,7 @@ h1 {
 
 .subhead {
   display: flex;
+  margin-top: 20px;
 }
 
 .acorn {

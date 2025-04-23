@@ -1,1 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6e3;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.acorn {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.acorn:hover {
+  transform: scale(1.05);
+}

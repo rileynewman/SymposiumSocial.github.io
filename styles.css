@@ -18,13 +18,10 @@ body {
 h1 {
   font-size: 6rem;
   margin-bottom: 20px;
-  display: flex;
-  text-align: center;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
   gap: 40px;
   margin-top: 20px;
 }

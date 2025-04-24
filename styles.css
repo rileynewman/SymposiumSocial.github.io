@@ -38,6 +38,16 @@ h1 {
   cursor: pointer;
 }
 
+a:link {
+  color: #595933;
+  text-decoration: none;
+}
+
+a:active {
+  color: brown;
+  text-decoration: f5f5a2;
+  
+
 .acorn:hover {
   transform: scale(1.05);
 }

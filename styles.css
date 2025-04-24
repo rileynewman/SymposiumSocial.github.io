@@ -32,6 +32,16 @@ h1 {
   left: 50%;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
 
 a:link {
   color: #595933;

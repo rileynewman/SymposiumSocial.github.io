@@ -12,7 +12,7 @@
   <body>
     
 <h1>About Quercus</h1>
-<p>Quercus is a social club rooted in real connection. Named after the oak tree’s genus—diverse yet unified—our community brings people together not through screens, but through shared experiences. Each month, we gather for a new adventure and a shared meal from a chosen cookbook. Like acorns growing into oaks, we believe in nurturing friendships that are grounded, authentic, and lasting. Come branch out with us.</p>
+<p>Quercus is a social club rooted in real connection. Named after the oak tree’s genus—diverse yet unified—our community brings people together not through screens, but through shared experiences and a healthy dose of curiousity.We believe in nurturing friendships that are grounded, authentic, and lasting. Come branch out with us.</p>
 
 
 

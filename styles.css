@@ -23,14 +23,9 @@ h1 {
   margin-bottom: 20px;
 }
 
-.navbar {
-  background-color: none;
-  padding: 10px 30px;
-  border-radius: 20px;
-  position: absolute;
-  top: 30px;
-  left: 50%;
-}
+a {
+  display: block;
+  padding: 8px;
 
 ul {
   list-style-type: none;

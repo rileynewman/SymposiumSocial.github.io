@@ -45,10 +45,11 @@ h1 {
 a:link {
   color: #595933;
   text-decoration: none;
-  transform: scale(1.05);
 }
 
 a:active {
-  color: f5f5a2;
+  color: #f5f5a2;
   text-decoration: none;
+  transform: scale(1.05);
+}
   

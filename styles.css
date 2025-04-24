@@ -35,23 +35,6 @@ h1 {
   transform: translateX(-50%);
 }
 
-// #wrong rn//
-
-.subhead {
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.acorn {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
-// #wrongrn//
 
 a:link {
   color: #595933;
@@ -62,7 +45,3 @@ a:active {
   color: brown;
   text-decoration: f5f5a2;
   
-
-.acorn:hover {
-  transform: scale(1.05);
-}

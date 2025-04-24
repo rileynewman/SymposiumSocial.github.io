@@ -19,8 +19,7 @@ h1 {
   font-size: 6rem;
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .nav-links {

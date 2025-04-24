@@ -42,6 +42,6 @@ a:link {
 }
 
 a:active {
-  color: brown;
-  text-decoration: f5f5a2;
+  color: f5f5a2;
+  text-decoration: none;
   

@@ -7,7 +7,6 @@ body {
   padding: 0;
   font-family: "Unbounded", sans-serif;
   font-weight: 900;
-  color: #838244;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,12 +23,14 @@ h1 {
   font-size: 6rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #595933
 }
 
 .nav-links {
   display: flex;
   gap: 40px;
   margin-top: 5px;
+  color: #838244
 }
 
 .nav-links a {

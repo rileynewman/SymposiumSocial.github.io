@@ -62,4 +62,16 @@ a:active {
 
 body {
   cursor: url('IMG_0436.PNG'), auto}
+
+.about-info {
+  text-align: right;
+  padding-left: 100px;
+  color: #595933;
+}
+
+.about-title { 
+  text-align: right;
+  padding-left: 120px;
+  color: #595933;
+}
   

@@ -31,10 +31,18 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 5.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
   color: #838244;
   text-shadow: 1px 1px 2px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 2rem; 
+  font-weight: 400; 
+  color: #595933; 
+  margin-top: 10px;
 }
 
 .nav-links {

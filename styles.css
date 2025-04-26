@@ -48,7 +48,8 @@ h1 {
   display: flex;
   gap: 40px;
   margin-top: 5px;
-  color: #8a894d
+  color: #8a894d;
+  justify-content: center;
 }
 
 .nav-links a {

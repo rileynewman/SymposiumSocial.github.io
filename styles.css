@@ -1,6 +1,7 @@
-body {
+ body {
   background-image: url('IMG_0004.jpg');
   background-size: cover;
+  background attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
@@ -90,4 +91,16 @@ body {
   font-family: "blackest", sans-serif;
   font-style: normal;
 }
+
+.center-stuff {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
   

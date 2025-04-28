@@ -1,1 +1,141 @@
+ body {
+  background-image: url('IMG_0004.jpg');
+  background-size: cover;
+  background attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: "blackest", sans-serif;
+  font-style: normal;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.container {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  div {
+    width: 400px;
+  }
+}
+
+h1 {
+  font-family: "blackest-text", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #838244;
+  text-shadow: 1px 1px 2px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 4.5rem; 
+  font-weight: 400; 
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  margin-top: 5px;
+  color: #8a894d;
+  justify-content: center;
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #8a894d;
+  font-weight: 600;
+}
+
+
+a:link {
+  color: #595933;
+  text-decoration: none;
+}
+
+a:active {
+  color: #f5f5a2;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+body {
+  cursor: url('IMG_0436.PNG'), auto}
+
+.center-stuff {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-links a:hover {
+  color: #838244;
+ transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* ABOUT P 2 */
+
+.about-page {
+  display: flex;
+  flex-wrap: wrap; /* For mobile responsiveness */
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Soft edges if you want */
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: right;
+ justify-content: center;
+ align-items: center;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: right;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+  

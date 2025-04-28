@@ -92,6 +92,17 @@ body {
 }
 
 /* ABOUT P 2 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", sans-serif;
+  background-color: #f9f9f6;
+  color: #595933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
 .about-page {
   display: flex;

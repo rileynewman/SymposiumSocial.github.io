@@ -77,13 +77,17 @@ body {
 .about-info {
   text-align: right;
   padding-left: 100px;
-  color: #595933;
-  font-size: 3rem;
+  color: #838244;
+  font-size: 1rem;
+  font-family: "blackest", sans-serif;
+  font-style: normal;
 }
 
 .about-title { 
   text-align: right;
   padding-left: 120px;
-  color: #595933;
+  color: #838244;
+  font-family: "blackest", sans-serif;
+  font-style: normal;
 }
   

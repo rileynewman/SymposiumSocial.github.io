@@ -75,23 +75,6 @@ a:active {
 body {
   cursor: url('IMG_0436.PNG'), auto}
 
-.about-info {
-  text-align: right;
-  padding-left: 100px;
-  color: #838244;
-  font-size: 1rem;
-  font-family: "blackest", sans-serif;
-  font-style: normal;
-}
-
-.about-title { 
-  text-align: right;
-  padding-left: 120px;
-  color: #838244;
-  font-family: "blackest", sans-serif;
-  font-style: normal;
-}
-
 .center-stuff {
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
@@ -106,6 +89,48 @@ body {
 .nav-links a:hover {
   color: #838244;
  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* ABOUT P 2 */
+
+.about-page {
+  display: flex;
+  flex-wrap: wrap; /* For mobile responsiveness */
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Soft edges if you want */
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
   

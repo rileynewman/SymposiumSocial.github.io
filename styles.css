@@ -1,489 +1,155 @@
- /* Quercus Social Club CSS - Based on provided brand images */
-
-:root {
-  /* Color palette from your logo and leaf images */
-  --primary-green-light: #c5d5a3;     /* Light green from gradient */
-  --primary-green: #a6bd6e;           /* Medium green from leaves */
-  --primary-cream: #f6f5f0;           /* Background cream color */
-  --dark-gray: #333333;               /* Text dark gray from logo */
-  --medium-gray: #666666;             /* Medium gray for secondary text */
-  --light-gray: #e0dfd9;              /* Light gray for borders */
-  --accent-green: #8ea159;            /* Deeper green for accents */
-  
-  /* Font sizes */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-}
-
-/* Base styles */
-* {
+/* GLOBAL STYLES */
+body {
+  background-color: #f4efe5;
+  background-image: url('oak-background.jpg'); /* replace with your actual image filename */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "blackest-text", serif;
-  line-height: 1.6;
-  color: var(--dark-gray);
-  background-color: var(--primary-cream);
-  position: relative;
-}
-
-/* Oak leaf background effect */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('q-background.jpg'); /* Reference to your leaf image */
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-position: right -100px top -100px;
-  opacity: 1;
-  z-index: -1;
-  pointer-events: none;
-}
-
-h1, h2, h3, h4, h5, h6, .nav-links a {
-  font-family: 'blackest', sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-/* Header & Navigation */
-header {
-  background-color: var(--primary-cream);
-  border-bottom: 1px solid var(--light-gray);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding: 1rem 0;
-}
-
-.center-stuff {
+  font-family: "blackest", sans-serif;
+  font-style: normal;
+  color: #333333;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
 .container {
-  width: 100%;
+  text-align: center;
+  width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  margin: auto;
 }
 
-.container img {
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+h1,
+h2,
+h3 {
+  font-family: "blackest-text", sans-serif;
+  font-weight: 700;
+  color: #333333;
 }
 
-.container img:hover {
-  transform: rotate(5deg);
+h1 {
+  font-size: 4rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+h2.form-title {
+  font-size: 2.5rem;
+  margin-top: 40px;
+  color: #333333;
+}
+
+/* NAVIGATION (if used) */
 .nav-links {
   display: flex;
-  gap: 1.5rem;
-  margin: 0.5rem 0;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 .nav-links a {
-  color: var(--dark-gray);
+  font-size: 1.2rem;
   text-decoration: none;
-  font-size: var(--text-lg);
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  position: relative;
-  letter-spacing: 0.5px;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: var(--accent-green);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+  color: #333333;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--accent-green);
+  color: #bebc6e;
 }
 
-.nav-links a:hover::after {
-  width: 80%;
-}
-
-/* Sections */
-section {
-  padding: 3rem 1rem;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-section:nth-child(odd) {
-  background-color: rgba(166, 189, 110, 0.08);
-}
-
-/* About Section */
-.about-title {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-  text-align: center;
-}
-
-.about-description {
-  font-size: var(--text-lg);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.about-description p {
-  margin-bottom: 1rem;
-}
-
-.about-description p:last-child {
-  font-style: italic;
-  color: var(--accent-green);
-  font-weight: 500;
-}
-
-/* Calendar Section */
-#calendar {
-  text-align: center;
-}
-
-#calendar h2 {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-}
-
-.calendar a {
-  display: inline-block;
-  background-color: var(--primary-green);
-  color: var(--dark-gray);
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.calendar a:hover {
-  background-color: var(--accent-green);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
-}
-
-.upcoming-highlight {
-  font-family: 'blackest', sans-serif;
-  font-size: var(--text-lg);
-  color: var(--accent-green);
-  margin-top: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-
-.upcoming-highlight::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url('acorn-icon.png'); /* Create a small acorn icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-/* Form Section */
-.form-title {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-  text-align: center;
-}
-
+/* REGISTRATION FORM */
 .registration-form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--light-gray);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "blackest-text", sans-serif;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
+.registration-form label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--dark-gray);
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #333333;
 }
 
-.form-help {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--medium-gray);
-  margin-top: 0.3rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
+.registration-form input,
+.registration-form select {
   width: 100%;
-  padding: 0.8rem;
-  border: 2px solid var(--light-gray);
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  font-family: "source-serif-pro", serif;
-  font-size: var(--text-base);
-  transition: all 0.3s ease;
-  background-color: var(--primary-cream);
+  font-size: 1rem;
+  background-color: #fff;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--primary-green);
-  box-shadow: 0 0 0 3px rgba(166, 189, 110, 0.2);
+.registration-form input:invalid,
+.registration-form select:invalid {
+  border-color: #e08080;
 }
 
-input:invalid,
-select:invalid,
-textarea:invalid {
-  border-color: #ff6b6b;
-}
-
-input:valid:not(:placeholder-shown),
-select:valid:not([value=""]),
-textarea:valid:not(:placeholder-shown) {
-  border-color: #51cf66;
-}
-
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-  transform: scale(1.2);
-}
-
-.form-group input[type="checkbox"] + label {
-  display: inline;
-  font-weight: normal;
-}
-
-button[type="submit"] {
-  background-color: var(--accent-green);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-family: 'blackest', sans-serif;
-  font-size: var(--text-lg);
-  font-weight: 600;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: block;
+.registration-form button {
+  margin-top: 30px;
+  padding: 12px;
   width: 100%;
-  margin-top: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #bebc6e;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: var(--primary-green);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(166, 189, 110, 0.4);
+.registration-form button:hover {
+  background-color: #d0e4cc;
 }
 
-button[type="submit"]:active {
-  transform: translateY(-1px);
+/* CALENDAR EMBED */
+.calendar iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border: none;
+  margin: 20px auto;
+  display: block;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Footer */
-footer {
-  background-color: var(--dark-gray);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-footer p {
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-
-.footer-links, .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.footer-links a, .social-links a {
-  color: var(--primary-cream);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: var(--text-sm);
-}
-
-.footer-links a:hover, .social-links a:hover {
-  color: var(--primary-green-light);
-}
-
-.social-links {
-  margin-top: 1.5rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-/* Decorative circular pattern resembling the logo circle */
-.circular-pattern {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 1px solid var(--light-gray);
-  border-radius: 50%;
-  right: -150px;
-  bottom: -150px;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-.circular-pattern::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid var(--light-gray);
-  border-radius: 50%;
-  top: 50px;
-  left: 50px;
-}
-
-.circular-pattern::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: var(--primary-green-light);
-  border-radius: 50%;
-  top: 100px;
-  left: 100px;
-  opacity: 0.3;
-}
-
-/* Responsive styles */
-@media (min-width: 768px) {
-  .center-stuff {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2rem;
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
   }
-  
-  .container img {
-    margin-bottom: 0;
+
+  h2.form-title {
+    font-size: 2rem;
   }
-  
+
   .nav-links {
-    margin: 0;
-  }
-  
-  section {
-    padding: 4rem 2rem;
-  }
-  
-  .about-title, .form-title, #calendar h2 {
-    font-size: var(--text-4xl);
-  }
-  
-  button[type="submit"] {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 3rem;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  /* Enhanced background for larger screens */
-  body::before {
-    background-position: right top;
-    background-size: 50%;
+  .registration-form {
+    padding: 20px;
   }
-}
-
-/* Acorn bullet points */
-ul.acorn-list {
-  list-style: none;
-  padding-left: 1.5rem;
-}
-
-ul.acorn-list li {
-  position: relative;
-  margin-bottom: 0.8rem;
-}
-
-ul.acorn-list li::before {
-  content: "";
-  position: absolute;
-  left: -1.5rem;
-  top: 0.3rem;
-  width: 12px;
-  height: 15px;
-  background-image: url('acorn-icon.png'); /* Create a small acorn icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--primary-cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-green);
-  border-radius: 5px;
-  border: 3px solid var(--primary-cream);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--accent-green);
-}
-
-/* Selection styling */
-::selection {
-  background-color: var(--primary-green-light);
-  color: var(--dark-gray);
 }

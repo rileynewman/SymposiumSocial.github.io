@@ -141,6 +141,7 @@ body {
 }
 
 /* Registration form */
+
 .form-title {
   text-align: center;
   font-family: "blackest-text", sans-serif
@@ -164,6 +165,7 @@ body {
   margin-top: 15px;
   color: #4c4c30;
   font-weight: bold;
+ font-family: "blackest-text", sans-serif;
 }
 
 .registration-form input,

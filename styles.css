@@ -1,7 +1,7 @@
  body {
   background-image: url('qsc.jpg');
   background-size: cover;
-  background attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -94,6 +94,8 @@ body {
 /* ABOUT P 2 */
 
 .about-page {
+ font-family: "blackest", sans-serif;
+  font-style: normal;
   display: flex;
   flex-wrap: wrap; /* For mobile responsiveness */
   max-width: 1200px;
@@ -136,6 +138,66 @@ body {
  justify-content: center;
  align-items: center;
  
+}
+
+/* Registration form */
+.form-title {
+  text-align: center;
+  font-family: "blackest-text", sans-serif
+  font-size: 2rem;
+  color: #595933;
+  margin-top: 40px;
+}
+
+.registration-form {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #fdfcf6;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 15px;
+  color: #4c4c30;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d8d8c2;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.registration-form input:invalid,
+.registration-form select:invalid {
+  border-color: #e08080;
+}
+
+.registration-form button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  background-color: #f5f5a2;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #B5DBB8;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #D2D080;
 }
 
   

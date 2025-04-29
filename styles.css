@@ -54,7 +54,7 @@ body::before {
 }
 
 h1, h2, h3, h4, h5, h6, .nav-links a {
-  font-family: 'blackest-text', sans-serif;
+  font-family: 'blackest', sans-serif;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -198,7 +198,7 @@ section:nth-child(odd) {
 }
 
 .upcoming-highlight {
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'blackest', sans-serif;
   font-size: var(--text-lg);
   color: var(--accent-green);
   margin-top: 1.5rem;
@@ -302,7 +302,7 @@ button[type="submit"] {
   color: white;
   border: none;
   padding: 1rem 2rem;
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'blackest', sans-serif;
   font-size: var(--text-lg);
   font-weight: 600;
   border-radius: 30px;

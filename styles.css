@@ -48,14 +48,14 @@ body::before {
   background-size: 900px;
   background-repeat: no-repeat;
   background-position: right -100px top -100px;
-  opacity: 0.08;
+  opacity: 1;
   z-index: -1;
   pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6, .nav-links a {
   font-family: 'blackest', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -71,7 +71,6 @@ header {
 
 .center-stuff {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }

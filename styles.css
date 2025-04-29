@@ -145,7 +145,7 @@ body {
   text-align: center;
   font-family: "blackest-text", sans-serif
   font-size: 2rem;
-  color: #595933;
+  color: #333333;
   margin-top: 40px;
 }
 
@@ -156,7 +156,7 @@ body {
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-family: sans-serif;
+  font-family: "blackest-text", sans-serif
 }
 
 .registration-form label {

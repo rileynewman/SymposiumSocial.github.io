@@ -18,97 +18,29 @@
   <meta name="description" content="Quercus Social Club - Building real connections through in-person events and activities." />
   <link rel="apple-touch-icon" href="QuercusLogo-trans.svg" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: "blackest", sans-serif;
-      background-color: #f4efe5;
-      color: #333333;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #f4efe5;
-    }
-
-    .logo {
-      font-family: "blackest-text", sans-serif;
-      font-size: 2rem;
-      color: #bebc6e;
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 2.5rem;
-      cursor: pointer;
-      color: #333333;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      font-family: "blackest-text", sans-serif;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333333;
-      font-weight: 600;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #bebc6e;
-    }
-
-    @media screen and (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #d0e4cc;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-      }
-
-      .nav-links.show {
-        display: flex;
-      }
-    }
-  </style>
+  <!-- Removed inline style that was conflicting with external CSS -->
 </head>
 <body>
   <header class="header">
-  <div class="logo">Quercus</div>
-  <nav class="nav">
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#calendar">Calendar</a></li>
-      <li><a href="#register">Register</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-</header>
+    <div class="logo">
+    <img src="QuercusLogo-trans.svg" alt="Quercus Logo" class="logo-image">
+  </div>
+    <nav class="nav">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
   
   <main>
     <section id="about">
-      <h1 class="about-title">About Quercus</h1>
       <div class="about-description">
         <p>Quercus is about the connections you can't get through a screen.</p>
         <p>Grow real friendships. Try new things.</p>
@@ -119,23 +51,13 @@
     <section id="calendar">
       <h2>Events</h2>
       <div class="calendar">
-        <p><iframe src="May-cal.pdf" aria-label="View our May Calendar (PDF file)"></p>
+        <p><iframe src="May-cal.pdf" aria-label="View our May Calendar (PDF file)"></iframe></p>
         <p class="upcoming-highlight">Next event: 5/19</p>
       </div>
     </section>
     
   </main>
   
-  <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-</script>
-  
-</body>
   <footer>
     <p>© 2025 Quercus Social Club. Branch out.</p>
     <div class="footer-links">
@@ -145,4 +67,16 @@
       <a href="https://instagram.com/quercussocial" aria-label="Follow us on Instagram">Instagram</a>
     </div>
   </footer>
+
+  <script>
+    // Fixed JavaScript for hamburger menu
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  
+</body>
 </html>

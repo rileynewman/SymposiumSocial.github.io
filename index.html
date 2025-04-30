@@ -25,6 +25,9 @@
       <div class="container">
         <img src="QuercusLogo-trans.svg" alt="Quercus Social Club logo with acorn" width="200" height="80" />
       </div>
+      <div class="menu-toggle" id="menu-toggle">
+    &#9776; <!-- Unicode for 3 horizontal bars -->
+  </div>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#calendar">Calendar</a>
@@ -53,17 +56,23 @@
     
   </main>
   
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+  
+</body>
   <footer>
     <p>© 2025 Quercus Social Club. Branch out.</p>
     <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
       <a href="contact.html">Contact Us</a>
-      <a href="terms.html">Terms of Service</a>
     </div>
     <div class="social-links">
-      <a href="https://instagram.com/quercusclub" aria-label="Follow us on Instagram">Instagram</a>
-      <a href="https://twitter.com/quercusclub" aria-label="Follow us on Twitter">Twitter</a>
+      <a href="https://instagram.com/quercussocial" aria-label="Follow us on Instagram">Instagram</a>
     </div>
   </footer>
-</body>
 </html>

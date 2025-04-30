@@ -32,7 +32,6 @@ body {
   font-family: "source-serif-pro", serif;
   line-height: 1.6;
   color: var(--dark-gray);
-  background-color: var(--primary-cream);
   position: relative;
 }
 
@@ -80,7 +79,7 @@ header {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -89,7 +88,7 @@ header {
 .container img {
   max-width: 180px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   transition: transform 0.3s ease;
 }
 

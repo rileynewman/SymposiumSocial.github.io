@@ -87,6 +87,23 @@
     const entryScreen = document.getElementById('entry-screen');
     entryScreen.classList.add('hidden');
   });
+  
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const entryScreen = document.getElementById('entry-screen');
+      entryScreen.classList.add('hidden');
+    }, 3000); // 3000ms = 3 seconds
+  });
+  
+
+  const entryScreen = document.getElementById('entry-screen');
+
+  function hideEntryScreen() {
+    entryScreen.classList.add('hidden');
+  }
+
+  entryScreen.addEventListener('click', hideEntryScreen);
+  entryScreen.addEventListener('touchstart', hideEntryScreen);
   </script>
   
 </body>

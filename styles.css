@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 
 /* About Section - ENHANCED FOR VISUAL IMPACT */
 #about {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   position: relative;
   z-index: 1;
   min-height: 400px; 
@@ -239,8 +239,8 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 .signup-button {
   display: inline-block;
   background-color: #bfbd6e;
-  color: white;
-  padding: 0.8rem 1.5rem;
+  color: #333333;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   text-decoration: none;
   font-family: 'blackest-text', sans-serif;
@@ -249,8 +249,9 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
   white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 1.5rem;
-  border: solid #333333
+  margin-top: 0.5rem;
+  border: solid #333333;
+  border-width: thin;
 }
 
 .signup-button:hover {

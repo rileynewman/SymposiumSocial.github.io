@@ -112,10 +112,10 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 /* ENTRY SCREEN END */
 
-/* Header & Navigation - REDUCED HEIGHT */
+/* Header & Navigation */
 .header {
-  padding: 5px 15px; /* Reduced padding from 10px to 5px */
-  margin-bottom: 5px; /* Reduced margin from 10px to 5px */
+  padding: 8px 15px; /* Reduced padding from 10px to 5px */
+  margin-bottom: 8px; /* Reduced margin from 10px to 5px */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 
 .logo-image {
-  height: 90px; /* Explicitly set height */
+  height: 100px; /* Explicitly set height */
   width: auto; /* Maintain aspect ratio */
   margin-left: auto;
   margin-right: auto;
@@ -166,7 +166,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   font-weight: 600;
 }
 
-/* FIX 3: Reduce hamburger menu size on mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -176,8 +175,8 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 
 .hamburger span {
-  width: 20px; /* Reduced from 25px */
-  height: 2px; /* Reduced from 3px */
+  width: 20px;
+  height: 2px; 
   background-color: #333333;
   border-radius: 2px;
   transition: all 0.3s ease;

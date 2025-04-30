@@ -33,16 +33,11 @@ body {
   line-height: 1.6;
   color: var(--dark-gray);
   position: relative;
+  text-align: center;
 }
 
 /* Oak leaf background effect */
 body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('qsc.jpg'); /* Reference to your leaf image */
   background-size: cover;
   background-attachment: fixed;
@@ -62,9 +57,9 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* Header & Navigation */
 .logo-image {
   height: 100px; /* adjust size as needed */
-  width: auto;
-  display: block;
-  margin: 0 auto
+ margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .header {
   width: 100%;

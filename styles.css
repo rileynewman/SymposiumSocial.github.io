@@ -37,7 +37,7 @@ body {
 }
 
 /* Oak leaf background effect */
-body::before {
+body {
   background-image: url('qsc.jpg'); /* Reference to your leaf image */
   background-size: cover;
   background-attachment: fixed;

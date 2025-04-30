@@ -114,7 +114,12 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color: #f4efe5;
+  background-image: url('qsc.jpg'); /* Reference to your leaf image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: "blackest-text", sans-serif;
 }
 

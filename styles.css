@@ -196,13 +196,14 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 /* About Section with background image */
 #about {
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   position: relative;
   z-index: 1;
   min-height: 400px; /* Ensure minimum height for visual appeal */
   display: flex;
   align-items: center;
   justify-content: center;
+  font-style: 'Blackest-text', sans-serif;
 }
 
 .about-title {
@@ -218,7 +219,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   font-style: 'Blackest-text', sans-serif;
   max-width: 700px;
   margin: 0 auto;
-  background-color: rgba(246, 245, 240, 0.8); /* Semi-transparent background for readability */
   padding: 2rem;
   border-radius: 15px;
 }
@@ -427,8 +427,8 @@ footer {
   background-color: var(--dark-gray);
   color: white;
   text-align: center;
-  padding: 1rem 1rem;
-  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-top: 3rem;
 }
 
 footer p {

@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* Sign Up Button */
 .signup-container {
   text-align: center;
-  padding: 1rem 0.3rem;
+  padding: 2rem 1rem;
   margin-top: 1rem;
 }
 
@@ -300,14 +300,17 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   display: inline-block;
   background-color: var(--accent-green);
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 30px;
+  padding: 0.5rem 1.5rem; /* Reduced padding */
+  border-radius: 20px; /* Smaller border radius */
   text-decoration: none;
   font-family: 'Blackest', sans-serif;
-  font-size: var(--text-xl);
+  font-size: 1rem; /* Reduced font size */
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
+  box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
+  width: auto; /* Allow button to size to content */
+  max-width: 25%; /* Make button about 1/4 of container width */
+  min-width: 120px; /* Ensure button doesn't get too small on mobile */
 }
 
 .signup-button:hover {

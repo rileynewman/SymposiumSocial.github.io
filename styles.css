@@ -369,12 +369,12 @@ footer {
   background-color: var(--dark-gray);
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 1rem;
+  padding: 1rem 1rem;
+  margin-top: 0.5rem;
 }
 
 footer p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   font-style: italic;
 }
 
@@ -398,7 +398,7 @@ footer p {
 }
 
 .social-links {
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
 }
 
 .social-links a {
@@ -474,40 +474,6 @@ footer p {
     padding: 1rem 3rem;
   }
 
-  /* Enhanced background for larger screens */
-  body::before {
-    background-position: right top;
-    background-size: 50%;
-  }
-}
-
-/* Acorn bullet points */
-ul.acorn-list {
-  list-style: none;
-  padding-left: 1.5rem;
-}
-
-ul.acorn-list li {
-  position: relative;
-  margin-bottom: 0.8rem;
-}
-
-ul.acorn-list li::before {
-  content: "";
-  position: absolute;
-  left: -1.5rem;
-  top: 0.3rem;
-  width: 12px;
-  height: 15px;
-  background-image: url('acorn-icon.png'); /* Create a small acorn icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
 ::-webkit-scrollbar-track {
   background: var(--primary-cream);

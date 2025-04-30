@@ -1,203 +1,99 @@
+/* Global Styles */
 body {
-  background-image: url('qsc.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   margin: 0;
   padding: 0;
-  font-family: "blackest", sans-serif;
-  font-style: normal;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  background-color: #f4efe5;
+  color: #333333;
+  scroll-behavior: smooth;
 }
 
-.container {
+/* Hero Section */
+.hero {
   text-align: center;
+  padding: 100px 20px 50px;
+  background-image: url('IMG_0004.jpg'); /* your oak background */
+  background-size: cover;
+  background-position: center;
+  color: #333333;
 }
 
-@media screen and (max-width: 500px) {
-  div {
-    width: 400px;
-  }
-}
-
-h1 {
-  font-family: "blackest-text", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 6rem;
-  margin-bottom: 12px;
-  text-align: center;
-  color: #838244;
-  text-shadow: 1px 1px 2px;
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 0.2em;
 }
 
 .subtitle {
-  display: block;
-  font-size: 4.5rem; 
-  font-weight: 400; 
-  margin-top: 10px;
+  font-size: 2rem;
+  color: #838244;
+  margin-top: 0;
 }
 
-.nav-links {
-  display: flex;
-  gap: 40px;
-  margin-top: 0px;
-  color: #8a894d;
-  justify-content: center;
+/* Navigation */
+.main-nav {
+  margin-top: 30px;
 }
 
-.nav-links a {
-  font-size: 1.5rem;
+.main-nav a {
+  margin: 0 15px;
   text-decoration: none;
-  color: #333333;
-  font-weight: 600;
-}
-
-
-a:link {
+  font-weight: 700;
   color: #595933;
-  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-a:active {
-  color: #f5f5a2;
-  text-decoration: none;
+.main-nav a:hover {
+  color: #bebc6e;
   transform: scale(1.05);
 }
 
-body {
-  cursor: url('IMG_0436.PNG'), auto}
-
-.center-stuff {
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
+/* Section Layouts */
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.nav-links a:hover {
-  color: #838244;
- transition: color 0.3s ease, transform 0.2s ease;
-}
-
-/* ABOUT P 2 */
-
-.about-page {
- font-family: "blackest", sans-serif;
-  font-style: normal;
+/* About Section */
+.about {
   display: flex;
-  flex-wrap: wrap; /* For mobile responsiveness */
-  max-width: 1200px;
-  width: 90%;
-  margin: 40px auto;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 40px;
 }
 
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about .text-block {
+  flex: 1 1 300px;
 }
 
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px; /* Soft edges if you want */
+.about .image-block {
+  flex: 1 1 300px;
 }
 
-.about-content {
-  flex: 1;
-  padding: 20px;
+.about img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
 
-.about-title {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-align: right;
- justify-content: center;
- align-items: center;
-}
-
-.about-description p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: right;
- justify-content: center;
- align-items: center;
- 
-}
-
-/* Registration form */
-
-.form-title {
+/* Calendar & Register Section */
+.calendar, .register {
   text-align: center;
-  font-family: "blackest-text", sans-serif
-  font-size: 2rem;
+}
+
+.calendar h2,
+.register h2,
+.about h2 {
+  font-size: 2.5rem;
   color: #333333;
-  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.registration-form {
-  max-width: 500px;
-  margin: 30px auto;
-  background-color: #fdfcf6;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-family: "blackest-text", sans-serif
-}
-
-.registration-form label {
-  display: block;
-  margin-top: 15px;
-  color: #4c4c30;
-  font-weight: bold;
- font-family: "blackest-text", sans-serif;
-}
-
-.registration-form input,
-.registration-form select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #d8d8c2;
-  border-radius: 8px;
-  font-size: 1rem;
-  background-color: #fff;
-}
-
-.registration-form input:invalid,
-.registration-form select:invalid {
-  border-color: #e08080;
-}
-
-.registration-form button {
-  margin-top: 25px;
-  padding: 12px;
-  width: 100%;
-  background-color: #f5f5a2;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #B5DBB8;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.registration-form button:hover {
-  background-color: #D2D080;
+/* Footer */
+footer {
+  background-color: #d0e4cc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }

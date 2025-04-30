@@ -29,6 +29,12 @@
 }
 
 body {
+  background-image: url('homepage.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   font-family: "source-serif-pro", serif;
   line-height: 1.6;
   color: var(--dark-gray);
@@ -181,9 +187,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 /* About Section with background image */
 #about {
-  background-image: url('homepage.png'); /* Background only for about section */
-  background-size: cover;
-  background-position: center;
   padding: 5rem 1rem;
   position: relative;
   z-index: 1;
@@ -203,6 +206,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 .about-description {
   font-size: var(--text-lg);
+  font-style: 'Blackest-text', sans-serif;
   max-width: 700px;
   margin: 0 auto;
   background-color: rgba(246, 245, 240, 0.8); /* Semi-transparent background for readability */
@@ -212,6 +216,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 .about-description p {
   margin-bottom: 1rem;
+  font-style: 'Blackest-text', sans-serif;
 }
 
 .about-description p:last-child {
@@ -286,7 +291,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   display: inline-block;
   background-color: var(--accent-green);
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 30px;
   text-decoration: none;
   font-family: 'Blackest', sans-serif;

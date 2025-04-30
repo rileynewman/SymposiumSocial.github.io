@@ -18,7 +18,6 @@
   <meta name="description" content="Quercus Social Club - Building real connections through in-person events and activities." />
   <link rel="apple-touch-icon" href="QuercusLogo-trans.svg" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <!-- Removed inline style that was conflicting with external CSS -->
 </head>
 <body>
      <!-- ENTRY SPLASH SCREEN -->
@@ -29,13 +28,13 @@
     <!-- MAIN CONTENT -->
   <header class="header">
     <div class="logo">
-    <img src="QuercusLogo-trans.svg" alt="Quercus Logo" class="logo-image">
-  </div>
+      <img src="QuercusLogo-trans.svg" alt="Quercus Logo" class="logo-image">
+    </div>
     <nav class="nav">
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#calendar">Calendar</a></li>
-        <li><a href="#register">Register</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -61,6 +60,10 @@
       </div>
     </section>
     
+    <!-- Sign Up Section -->
+    <section class="signup-container">
+      <a href="register.html" class="signup-button">Sign Up Now</a>
+    </section>
   </main>
   
   <footer>
@@ -74,36 +77,54 @@
   </footer>
 
   <script>
-    // Fixed JavaScript for hamburger menu
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+    // Improved JavaScript for hamburger menu
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+      // Toggle menu on hamburger click
+      hamburger.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+      });
+      
+      // Close menu when clicking anywhere else
+      document.addEventListener('click', function(event) {
+        const isClickInside = navLinks.contains(event.target) || hamburger.contains(event.target);
+        if (!isClickInside && navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+        }
+      });
+      
+      // Close menu when clicking on a link
+      const links = navLinks.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.classList.remove('active');
+        });
+      });
     });
     
-    //SPLASH//
-  document.getElementById('entry-logo').addEventListener('click', function () {
-    const entryScreen = document.getElementById('entry-screen');
-    entryScreen.classList.add('hidden');
-  });
-  
-  window.addEventListener('load', function () {
-    setTimeout(function () {
+    // Entry screen logic
+    document.getElementById('entry-logo').addEventListener('click', function() {
       const entryScreen = document.getElementById('entry-screen');
       entryScreen.classList.add('hidden');
-    }, 3000); // 3000ms = 3 seconds
-  });
-  
+    });
+    
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const entryScreen = document.getElementById('entry-screen');
+        entryScreen.classList.add('hidden');
+      }, 3000); // 3000ms = 3 seconds
+    });
+    
+    const entryScreen = document.getElementById('entry-screen');
 
-  const entryScreen = document.getElementById('entry-screen');
+    function hideEntryScreen() {
+      entryScreen.classList.add('hidden');
+    }
 
-  function hideEntryScreen() {
-    entryScreen.classList.add('hidden');
-  }
-
-  entryScreen.addEventListener('click', hideEntryScreen);
-  entryScreen.addEventListener('touchstart', hideEntryScreen);
+    entryScreen.addEventListener('click', hideEntryScreen);
+    entryScreen.addEventListener('touchstart', hideEntryScreen);
   </script>
   
 </body>

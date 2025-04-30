@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quercus Social Club</title>
-    <link href="styles.css" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/pir3zfy.css">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Quercus">
-    <meta name="application-name" content="Quercus">
-    <meta name="theme-color" content="#f9f9f6">
-    <link rel="apple-touch-icon" href="QuercusLogo-trans.svg">
-  </head>
-
-  <body>
-    
-    <div class="center-stuff">
-      <div class="container">
-    <img src="QuercusLogo-trans.svg" alt="logo with acorn in the middle saying Quercus Social Club">
-      </div>
-      
-      
- <div class="nav-links">
-  <a href="about.html">About</a>
-  <a href="calendar.html">Calendar</a>
-  <a href="register.html">Register</a>
-</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quercus Social Club</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/pir3zfy.css" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Quercus" />
+  <meta name="application-name" content="Quercus" />
+  <meta name="theme-color" content="#bebc6e" />
+  <meta name="description" content="Quercus Social Club - Building real connections through in-person events and activities." />
+  <link rel="apple-touch-icon" href="QuercusLogo-trans.svg" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Removed inline style that was conflicting with external CSS -->
+</head>
+<body>
+     <!-- ENTRY SPLASH SCREEN -->
+    <div id="entry-screen">
+      <img src="QuercusLogo-trans.svg" alt="Quercus Logo" id="entry-logo" />
     </div>
-   
-    <footer> </footer> 
-    
-  </body>
 
+    <!-- MAIN CONTENT -->
+  <header class="header">
+    <div class="logo">
+    <img src="QuercusLogo-trans.svg" alt="Quercus Logo" class="logo-image">
+  </div>
+    <nav class="nav">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <div class="about-description">
+        <p>Quercus is about the connections you can't get through a screen.</p>
+        <p>Grow real friendships. Try new things.</p>
+        <p>Branch out today.</p>
+      </div>
+    </section>
+    
+    <section id="calendar">
+      <div class="calendar">
+        <img src='May-calendar.svg' aria-label="May Calendar events (PDF file)">
+        <p class="upcoming-highlight">Next event: 5/19</p>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>© 2025 Quercus Social Club. Branch out.</p>
+    <div class="footer-links">
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="social-links">
+      <a href="https://instagram.com/quercussocial" aria-label="Follow us on Instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // Fixed JavaScript for hamburger menu
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    
+    //SPLASH//
+  document.getElementById('entry-logo').addEventListener('click', function () {
+    const entryScreen = document.getElementById('entry-screen');
+    entryScreen.classList.add('hidden');
+  });
+  
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const entryScreen = document.getElementById('entry-screen');
+      entryScreen.classList.add('hidden');
+    }, 3000); // 3000ms = 3 seconds
+  });
+  
+
+  const entryScreen = document.getElementById('entry-screen');
+
+  function hideEntryScreen() {
+    entryScreen.classList.add('hidden');
+  }
+
+  entryScreen.addEventListener('click', hideEntryScreen);
+  entryScreen.addEventListener('touchstart', hideEntryScreen);
+  </script>
+  
+</body>
 </html>

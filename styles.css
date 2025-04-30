@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* Sign Up Button */
 .signup-container {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1rem 0.3rem;
   margin-top: 1rem;
 }
 

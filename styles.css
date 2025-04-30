@@ -120,10 +120,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('qsc.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: white;
   font-family: "blackest-text", sans-serif;
   position: sticky;
   top: 0;

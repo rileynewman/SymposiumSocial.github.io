@@ -100,20 +100,24 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   visibility: hidden;
   pointer-events: none;
 }
+/* ENTRY SCREEN END */
+
 
 /* Header & Navigation */
+  
 .logo-image {
-  max height: 90%; /* adjust size as needed */
- margin-left: auto;
+  max height: 40%; 
+  margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 .header {
+  padding: 10px 15px;
+  margin-bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
   background-image: url('qsc.jpg'); /* Reference to your leaf image */
   background-size: cover;
   background-attachment: fixed;
@@ -121,6 +125,8 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "blackest-text", sans-serif;
+  position: sticky;
+  top: 0;
 }
 
 
@@ -210,6 +216,8 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* Calendar Section */
 #calendar {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #calendar h2 {

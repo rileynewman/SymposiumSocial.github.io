@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 
 #entry-logo {
-  width: 220px;
+  width: 320px;
   height: auto;
   animation: spin 6s linear infinite;
   cursor: pointer;

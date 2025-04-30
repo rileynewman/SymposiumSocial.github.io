@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 /* Header & Navigation */
 .logo-image {
-  height: 100px; /* adjust size as needed */
+  max height: 90%; /* adjust size as needed */
  margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -71,11 +71,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   font-family: "blackest-text", sans-serif;
 }
 
-.logo {
-  font-size: 2rem;
-  color: #333333;
-  font-weight: bold;
-}
 
 .nav {
   position: relative;
@@ -104,7 +99,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 
 .hamburger span {
-  width: 25px;
+  width: 10px;
   height: 3px;
   background-color: #bebc6e;
   border-radius: 3px;

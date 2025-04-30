@@ -188,6 +188,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   margin-bottom: 1.5rem;
   color: var(--accent-green);
   text-align: center;
+  font-family: 'Blackest', sans-serif;
 }
 
 .about-description {
@@ -201,7 +202,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 
 .about-description p:last-child {
-  font-style: italic;
+  font-style: 'Blackest-text', sans-serif;
   color: var(--accent-green);
   font-weight: 500;
 }

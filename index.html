@@ -21,6 +21,12 @@
   <!-- Removed inline style that was conflicting with external CSS -->
 </head>
 <body>
+     <!-- ENTRY SPLASH SCREEN -->
+    <div id="entry-screen">
+      <img src="QuercusLogo-trans.svg" alt="Quercus Logo" id="entry-logo" />
+    </div>
+
+    <!-- MAIN CONTENT -->
   <header class="header">
     <div class="logo">
     <img src="QuercusLogo-trans.svg" alt="Quercus Logo" class="logo-image">
@@ -75,6 +81,11 @@
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("active");
     });
+    
+    //SPLASH//
+  document.getElementById('entry-logo').addEventListener('click', function () {
+    document.getElementById('entry-screen').classList.add('hidden');
+  });
   </script>
   
 </body>

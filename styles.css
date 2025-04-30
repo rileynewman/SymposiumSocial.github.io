@@ -49,9 +49,6 @@ body::before {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  opacity: 1;
-  z-index: -1;
   pointer-events: none;
 }
 
@@ -88,7 +85,6 @@ header {
 .container img {
   max-width: 180px;
   height: auto;
-  margin-bottom: 0.4rem;
   transition: transform 0.3s ease;
 }
 
@@ -97,7 +93,8 @@ header {
 }
 
 .nav-links {
-  display: inline-block;
+  display: flex;
+  margin: 0;
 }
 
 .nav-links a {
@@ -105,22 +102,11 @@ header {
   text-decoration: none;
   font-size: var(--text-lg);
   padding: 0.4rem 0.8rem;
-  border-radius: 20px;
+  position: relative;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
 }
 
-.nav-links a::after {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: var(--accent-green);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
 
 .nav-links a:hover {
   color: var(--accent-green);

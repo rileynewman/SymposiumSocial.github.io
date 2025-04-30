@@ -29,23 +29,18 @@
 }
 
 body {
+  background-image: url('homepage.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   font-family: "source-serif-pro", serif;
   line-height: 1.6;
   color: var(--dark-gray);
   position: relative;
   text-align: center;
-}
-
-/* Oak leaf background effect */
-body {
-  background-image: url('qsc.jpg'); /* Reference to your leaf image */
-  background-size: cover;
-  background-attachment: fixed;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
-  z-index: -1;
+  background-color: var(--primary-cream);
 }
 
 h1, h2, h3, h4, h5, h6, .nav-links a {
@@ -103,32 +98,31 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* ENTRY SCREEN END */
 
 
-/* Header & Navigation */
-  
-.logo-image {
-  max height: 40%; 
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+/* Header & Navigation - REDUCED HEIGHT */
 .header {
-  padding: 10px 15px;
-  margin-bottom: 10px;
+  padding: 5px 15px; /* Reduced padding from 10px to 5px */
+  margin-bottom: 5px; /* Reduced margin from 10px to 5px */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('qsc.jpg'); /* Reference to your leaf image */
+  background-image: url('qsc.jpg');
   background-size: cover;
-  background-attachment: fixed;
-  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "blackest-text", sans-serif;
   position: sticky;
   top: 0;
+  height: 80px; /* Setting explicit height for header - about half the original size */
+  z-index: 100;
 }
 
+.logo-image {
+  height: 60px; /* Explicitly set height */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .nav {
   position: relative;
@@ -154,12 +148,13 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  z-index: 101;
 }
 
 .hamburger span {
-  width: 10px;
+  width: 25px; /* Increased size for better visibility */
   height: 3px;
-  background-color: #bebc6e;
+  background-color: #333333; /* Changed to dark gray for better visibility */
   border-radius: 3px;
   transition: all 0.3s ease;
 }
@@ -172,14 +167,17 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   .nav-links {
     position: absolute;
     top: 60px;
-    right: 30px;
-    background-color: #f4efe5;
+    right: 0;
+    background-color: rgba(244, 239, 229, 0.95);
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center; /* Center menu items */
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
+    width: 200px; /* Set a fixed width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: none;
+    z-index: 100;
   }
 
   .nav-links.active {
@@ -187,8 +185,17 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   }
 }
 
+/* About Section with background image */
+#about {
+  padding: 5rem 1rem;
+  position: relative;
+  z-index: 1;
+  min-height: 400px; /* Ensure minimum height for visual appeal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/* About Section */
 .about-title {
   font-size: var(--text-3xl);
   margin-bottom: 1.5rem;
@@ -199,12 +206,17 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 .about-description {
   font-size: var(--text-lg);
+  font-style: 'Blackest-text', sans-serif;
   max-width: 700px;
   margin: 0 auto;
+  background-color: rgba(246, 245, 240, 0.8); /* Semi-transparent background for readability */
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .about-description p {
   margin-bottom: 1rem;
+  font-style: 'Blackest-text', sans-serif;
 }
 
 .about-description p:last-child {
@@ -218,6 +230,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem 1rem;
 }
 
 #calendar h2 {
@@ -265,6 +278,33 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   background-repeat: no-repeat;
   margin-right: 8px;
   vertical-align: middle;
+}
+
+/* Sign Up Button */
+.signup-container {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 1rem;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: var(--accent-green);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Blackest', sans-serif;
+  font-size: var(--text-xl);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
+}
+
+.signup-button:hover {
+  background-color: var(--primary-green);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
 
 /* Form Section */
@@ -482,7 +522,7 @@ footer p {
     margin-right: auto;
     padding: 1rem 3rem;
   }
-
+}
 
 ::-webkit-scrollbar-track {
   background: var(--primary-cream);

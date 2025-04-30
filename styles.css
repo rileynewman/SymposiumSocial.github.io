@@ -194,24 +194,16 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   }
 }
 
-/* About Section with background image */
+/* About Section */
 #about {
   padding: 3rem 1rem;
   position: relative;
   z-index: 1;
-  min-height: 400px; /* Ensure minimum height for visual appeal */
+  min-height: 400px; 
   display: flex;
   align-items: center;
   justify-content: center;
   font-style: 'Blackest-text', sans-serif;
-}
-
-.about-title {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-  text-align: center;
-  font-family: 'Blackest', sans-serif;
 }
 
 .about-description {
@@ -221,11 +213,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 15px;
-}
-
-.about-description p {
-  margin-bottom: 1rem;
-  font-style: 'Blackest-text', sans-serif;
 }
 
 .about-description p:last-child {

@@ -110,19 +110,5 @@
       <a href="https://twitter.com/quercusclub" aria-label="Follow us on Twitter">Twitter</a>
     </div>
   </footer>
-  
-  <script>
-    // Simple form validation
-    document.querySelector('.registration-form').addEventListener('submit', function(event) {
-      const ageInput = document.getElementById('age');
-      if (parseInt(ageInput.value) < 18) {
-        event.preventDefault();
-        alert('You must be 18 or older to join Quercus.');
-        ageInput.focus();
-      }
-      
-      // You could add more validation here
-    });
-  </script>
 </body>
 </html>

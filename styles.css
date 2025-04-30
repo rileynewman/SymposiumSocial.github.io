@@ -222,7 +222,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-size: var(--text-3xl);
   margin-bottom: 1.2rem;
   line-height: 1.7;
-  font-weight: 700;
+  font-weight: 900;
+  text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
 }
 
 

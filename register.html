@@ -64,7 +64,8 @@
     </section>
     </body>
   <script>
-    // Simple form validation
+    
+    /* FORM VALIDATION */
     document.querySelector('.registration-form').addEventListener('submit', function(event) {
       const ageInput = document.getElementById('age');
       if (parseInt(ageInput.value) < 18) {
@@ -73,7 +74,6 @@
         ageInput.focus();
       }
       
-      // You could add more validation here
     });
   </script>
 </html>

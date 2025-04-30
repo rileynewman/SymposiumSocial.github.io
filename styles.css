@@ -1,4 +1,4 @@
-/* Quercus Social Club CSS - Based on provided brand images */
+/* Quercus Social Club CSS - Updated */
 
 :root {
   /* Color palette from your logo and leaf images */
@@ -33,7 +33,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: scroll;
   background-repeat: no-repeat;
   font-family: "source-serif-pro", serif;
   line-height: 1.6;
@@ -41,6 +40,22 @@ body {
   position: relative;
   text-align: center;
   background-color: var(--primary-cream);
+  min-height: 100vh; /* Ensure body covers full viewport height */
+}
+
+/* FIX 1: Make background image cover entire background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('hand.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6, .nav-links a {
@@ -97,7 +112,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 }
 /* ENTRY SCREEN END */
 
-
 /* Header & Navigation - REDUCED HEIGHT */
 .header {
   padding: 5px 15px; /* Reduced padding from 10px to 5px */
@@ -152,19 +166,20 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   font-weight: 600;
 }
 
+/* FIX 3: Reduce hamburger menu size on mobile */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 5px;
+  gap: 4px;
   z-index: 101;
 }
 
 .hamburger span {
-  width: 25px; /* Increased size for better visibility */
-  height: 3px;
-  background-color: #333333; /* Changed to dark gray for better visibility */
-  border-radius: 3px;
+  width: 20px; /* Reduced from 25px */
+  height: 2px; /* Reduced from 3px */
+  background-color: #333333;
+  border-radius: 2px;
   transition: all 0.3s ease;
 }
 
@@ -194,7 +209,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   }
 }
 
-/* About Section */
+/* About Section - ENHANCED FOR VISUAL IMPACT */
 #about {
   padding: 3rem 1rem;
   position: relative;
@@ -204,21 +219,92 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   align-items: center;
   justify-content: center;
   font-style: 'Blackest-text', sans-serif;
+  /* Add decorative leaf-inspired background pattern */
+  overflow: hidden;
+}
+
+/* Add leaf-inspired decorative elements */
+#about::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--primary-green-light);
+  border-radius: 50% 50% 0 50%;
+  opacity: 0.15;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--accent-green);
+  border-radius: 50% 50% 50% 0;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+  z-index: -1;
 }
 
 .about-description {
-  font-size: var(--text-lg);
-  font-style: 'Blackest-text', sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2.5rem;
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem;
-  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border-left: 5px solid var(--accent-green);
+  text-align: left;
+}
+
+.about-description p {
+  font-size: var(--text-xl);
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.about-description p:first-child {
+  font-size: var(--text-2xl);
+  color: var(--accent-green);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 .about-description p:last-child {
-  font-style: 'Blackest-text', sans-serif;
+  font-weight: 600;
+  font-style: italic;
   color: var(--accent-green);
-  font-weight: 500;
+}
+
+/* FIX 2: Ensure sign-up button text stays on one line on mobile */
+.signup-button {
+  display: inline-block;
+  background-color: var(--accent-green);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Blackest', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-top: 1.5rem;
+}
+
+.signup-button:hover {
+  background-color: var(--primary-green);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
 
 /* Calendar Section */
@@ -274,36 +360,6 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   background-repeat: no-repeat;
   margin-right: 8px;
   vertical-align: middle;
-}
-
-/* Sign Up Button */
-.signup-container {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 1rem;
-}
-
-.signup-button {
-  display: inline-block;
-  background-color: var(--accent-green);
-  color: white;
-  padding: 0.5rem 1.5rem; /* Reduced padding */
-  border-radius: 20px; /* Smaller border radius */
-  text-decoration: none;
-  font-family: 'Blackest', sans-serif;
-  font-size: 0.8rem; /* Reduced font size */
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
-  width: auto; /* Allow button to size to content */
-  max-width: 25%; /* Make button about 1/4 of container width */
-  min-width: 120px; /* Ensure button doesn't get too small on mobile */
-}
-
-.signup-button:hover {
-  background-color: var(--primary-green);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
 
 /* Form Section */
@@ -419,7 +475,7 @@ footer {
   text-align: center;
   padding: 0.5rem 0.5rem;
   margin-top: 3rem;
-   position: fixed; 
+  position: fixed; 
   bottom: 0;
   left: 0;
   right: 0;
@@ -460,42 +516,6 @@ footer p {
   gap: 0.3rem;
 }
 
-/* Decorative circular pattern resembling the logo circle */
-.circular-pattern {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border: 1px solid var(--light-gray);
-  border-radius: 50%;
-  right: -150px;
-  bottom: -150px;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-.circular-pattern::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 1px solid var(--light-gray);
-  border-radius: 50%;
-  top: 50px;
-  left: 50px;
-}
-
-.circular-pattern::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: var(--primary-green-light);
-  border-radius: 50%;
-  top: 100px;
-  left: 100px;
-  opacity: 0.3;
-}
-
 /* Responsive styles */
 @media (min-width: 768px) {
   .center-stuff {
@@ -525,6 +545,20 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-description {
+    padding: 1.5rem;
+  }
+  
+  .about-description p {
+    font-size: var(--text-lg);
+  }
+  
+  .about-description p:first-child {
+    font-size: var(--text-xl);
   }
 }
 

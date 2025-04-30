@@ -73,7 +73,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#calendar">Calendar</a>
-        <a href="#register">Register</a>
+        <a href="register.html">Register</a>
       </nav>
     </div>
   </header>
@@ -92,54 +92,10 @@
       <h2>Calendar</h2>
       <div class="calendar">
         <p><a href="May-cal.pdf" target="_blank" aria-label="View our May Calendar (PDF file)">View our May Calendar (PDF)</a></p>
-        <p class="upcoming-highlight">Join us this Friday for our Oak Park Picnic!</p>
+        <p class="upcoming-highlight">Next event: 5/19</p>
       </div>
     </section>
     
-    <section id="register">
-      <h2 class="form-title">Join Quercus</h2>
-      <form class="registration-form" action="submit-form.php" method="POST" novalidate>
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required aria-required="true" />
-        </div>
-        
-        <div class="form-group">
-          <label for="gender">Gender:</label>
-          <select id="gender" name="gender" required aria-required="true">
-            <option value="">Select</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="nonbinary">Nonbinary</option>
-            <option value="prefer-not-say">Prefer not to say</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" min="18" required aria-required="true" />
-          <small class="form-help">Must be 18 or older</small>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
-        </div>
-        
-        <div class="form-group">
-          <label for="interests">What are you hoping to get out of Quercus?</label>
-          <textarea id="interests" name="interests" rows="4" required aria-required="true" maxlength="500"></textarea>
-          <small class="form-help">Maximum 500 characters</small>
-        </div>
-        
-        <div class="form-group">
-          <input type="checkbox" id="terms" name="terms" required aria-required="true" />
-          <label for="terms">I agree to the <a href="terms.html">terms and conditions</a></label>
-        </div>
-        
-        <button type="submit">Submit</button>
-      </form>
-    </section>
   </main>
   
   <footer>

@@ -104,6 +104,11 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 
 /* Header & Navigation */
+
+header {
+  height: 80px; 
+  max-height: 80px;
+  
 .logo-image {
   max height: 40%; 
   margin-left: auto;

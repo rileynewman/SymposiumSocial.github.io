@@ -419,6 +419,13 @@ footer p {
   gap: 0.3rem;
 }
 /* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: contain;
+  }
+}
+
 @media (min-width: 768px) {
   .center-stuff {
     flex-direction: row;

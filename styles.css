@@ -249,60 +249,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
 
-/* Calendar Section */
-#calendar {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3rem 1rem;
-}
-#calendar h2 {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-}
-.calendar a {
-  display: inline-block;
-  background-color: var(--primary-green);
-  color: var(--dark-gray);
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-.calendar a:hover {
-  background-color: var(--accent-green);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
-}
-.upcoming-highlight {
-  font-family: 'Blackest', sans-serif;
-  font-size: var(--text-lg);
-  color: var(--accent-green);
-  margin-top: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-.upcoming-highlight::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url('acorn-icon.png'); /* Create a small acorn icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
 /* Form Section */
 .form-title {
   font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--accent-green);
   text-align: center;
 }
@@ -315,7 +265,9 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 }
 .form-group {
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;

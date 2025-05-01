@@ -397,41 +397,28 @@ footer {
   color: white;
   text-align: center;
   padding: 0.5rem 0.5rem;
-  margin-top: 3rem;
-  position: absolute;
+  width: 100%;
+  /* Changed from fixed to sticky positioning */
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   height: 75px;
+  z-index: 90; /* Below header but above content */
 }
-footer p {
-  margin-bottom: 0.3rem;
-  font-style: italic;
-}
-.footer-links, .social-links {
+
+/* These additions ensure proper layout */
+body {
+  min-height: 100vh; /* Full viewport height */
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-.footer-links a, .social-links a {
-  color: var(--primary-cream);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: var(--text-xs);
+
+main {
+  flex: 1; /* This makes main take up all available space, pushing footer down */
+  padding-bottom: 85px; /* Slightly more than footer height to prevent overlap */
 }
-.footer-links a:hover, .social-links a:hover {
-  color: var(--primary-green-light);
-}
-.social-links {
-  margin-top: 0.8rem;
-}
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   body {

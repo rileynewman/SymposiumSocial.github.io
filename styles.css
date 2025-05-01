@@ -1,12 +1,11 @@
 :root {
-  /* Color palette from your logo and leaf images */
-  --primary-green-light: #c5d5a3;     /* Light green from gradient */
-  --primary-green: #a6bd6e;           /* Medium green from leaves */
-  --primary-cream: #f6f5f0;           /* Background cream color */
-  --dark-gray: #333333;               /* Text dark gray from logo */
-  --medium-gray: #666666;             /* Medium gray for secondary text */
-  --light-gray: #e0dfd9;              /* Light gray for borders */
-  --accent-green: #8ea159;            /* Deeper green for accents */
+  --primary-green-light: #c5d5a3;     /* Light green  */
+  --primary-green: #a6bd6e;           /* Medium green */
+  --primary-cream: #f6f5f0;           /* Background cream  */
+  --dark-gray: #333333;               /* dark gray */
+  --medium-gray: #666666;             /* Medium gray  */
+  --light-gray: #e0dfd9;              /* Light gray  */
+  --accent-green: #8ea159;            /* Deeper green */
   
   /* Font sizes */
   --text-xs: 0.75rem;
@@ -209,7 +208,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 /* ABOUT SECTION */
 #about {
   padding: 1.4rem 1rem;
-  position: relative;
+  position: fixed;
   z-index: 1;
   min-height: 400px; 
   display: flex;

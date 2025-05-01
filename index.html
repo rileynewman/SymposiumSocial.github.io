@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quercus Social Club</title>
   <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
@@ -25,7 +24,6 @@
       <img src="QuercusLogo-trans.svg" alt="Quercus Logo" id="entry-logo" />
     </div>
     <div style="flex: 1;"></div> 
-
     <!-- MAIN CONTENT -->
   <header class="header">
     <div class="logo">
@@ -50,7 +48,6 @@
       <div class="about-description">
         <p>Grow real friendships. Try new things.</p>
         <a href="register.html" class="signup-button">BRANCH OUT</a>
-        <img src="acorn.svg" alt="Acorn registration button" class="acorn-image">
       </div>
     </section>
     
@@ -66,13 +63,11 @@
       <a href="https://instagram.com/quercussocial" aria-label="Follow us on Instagram">Instagram</a>
     </div>
   </footer>
-
   <script>
     // Improved JavaScript for hamburger menu
     document.addEventListener('DOMContentLoaded', function() {
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
-
       // Toggle menu on hamburger click
       hamburger.addEventListener("click", function() {
         navLinks.classList.toggle("active");
@@ -109,11 +104,9 @@
     });
     
     const entryScreen = document.getElementById('entry-screen');
-
     function hideEntryScreen() {
       entryScreen.classList.add('hidden');
     }
-
     entryScreen.addEventListener('click', hideEntryScreen);
     entryScreen.addEventListener('touchstart', hideEntryScreen);
   </script>

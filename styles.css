@@ -18,7 +18,7 @@
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
 }
-/* Base styles */
+/* BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +36,9 @@ body {
   position: relative;
   text-align: center;
   background-color: var(--primary-cream);
-  min-height: 100vh; /* Ensure body covers full viewport height */
+  min-height: 100vh; 
 }
-/* FIX 1: Make background image cover entire background */
+
 body::before {
   content: "";
   position: fixed;
@@ -57,7 +57,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-weight: 600;
   line-height: 1.2;
 }
-/* Entry screen */
+/* END BASE STYLES */
+
+
+/* ENTRY SCREEN */
 .hidden {
   display: none;
 }
@@ -103,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 }
 /* ENTRY SCREEN END */
 
-/* Header & Navigation */
+/* HEADER AND NAVIGATION */
 .header {
   padding: 0 15px; 
   width: 100%;
@@ -119,7 +122,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   height: 80px;
   z-index: 100;
 }
-/* Adjust header layout for mobile */
+/* HEADER FOR MOBILE */
 .header {
   justify-content: space-between;
   padding-right: 20px; /* Ensure space for hamburger */
@@ -142,11 +145,11 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 .nav {
   position: relative;
 }
-/* Position nav to right side explicitly */
+
 .nav {
   position: relative;
-  margin-left: auto; /* Push to right */
-  z-index: 101; /* Higher than header */
+  margin-left: auto; 
+  z-index: 101; 
 }
 
 }
@@ -200,7 +203,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     display: flex;
   }
 }
-/* About Section */
+
+/* END HEADER */
+
+/* ABOUT SECTION */
 #about {
   padding: 1.4rem 1rem;
   position: relative;
@@ -248,8 +254,9 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
+/* END ABOUT SECTION */
 
-/* Form Section */
+/* FORM SECTION */
 
 .form-container {
   position: relative;
@@ -265,8 +272,9 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   height: 100vh; /* Makes sure it fills the viewport height on mobile */
   border: none;
 }
+/* END FORM SECTION */
 
-/* Footer */
+/* FOOTER */
   
 footer {
   background-color: var(--dark-gray);
@@ -283,10 +291,8 @@ footer {
   z-index: 90;
 }
   
-
-/* These additions ensure proper layout */
 body {
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
    padding-bottom: 75px; 
@@ -301,6 +307,7 @@ main {
   flex-direction: column;
   min-height: calc(100vh - 155px); /* Viewport height minus header and footer */
 }
+/* END FOOTER */
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -329,7 +336,7 @@ main {
   
   .nav-links {
     position: absolute;
-    top: 80px; /* Position right below the header */
+    top: 80px; 
     right: 0;
     background-color: rgba(244, 239, 229, 0.95);
     flex-direction: column;
@@ -370,19 +377,8 @@ main {
   .about-description p:first-child {
     font-size: var(--text-xl);
   }
-}
-::-webkit-scrollbar-track {
-  background: var(--primary-cream);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-green);
-  border-radius: 5px;
-  border: 3px solid var(--primary-cream);
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--accent-green);
-}
-/* Selection styling */
+
+/* SELECTION STYLING */
 ::selection {
   background-color: var(--primary-green-light);
   color: var(--dark-gray);

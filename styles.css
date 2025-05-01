@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 /* ABOUT SECTION */
 #about {
   padding: 1.4rem 1rem;
-  position: fixed;
+  position: relative;
   z-index: 1;
   min-height: 400px; 
   display: flex;

@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 
 .signup-button {
   display: inline-block;
-  background-color: #bebc6e;
+  background: linear-gradient(to right,  #bebc6e, #d0e4cc);
   color: #333333;
   padding: 0.5rem 1rem;
   border-radius: 30px;

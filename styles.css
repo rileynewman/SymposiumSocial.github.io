@@ -400,7 +400,7 @@ footer {
   text-align: center;
   padding: 1rem;
   width: 100%;
-  position: absolute; /* Changed from sticky to fixed */
+  position: fixed; /* Changed from sticky to fixed */
   bottom: 0;
   left: 0;
   right: 0;

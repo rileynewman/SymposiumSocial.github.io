@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   pointer-events: none;
 }
 /* ENTRY SCREEN END */
+
 /* Header & Navigation */
 .header {
   padding: 8px 15px; /* Reduced padding from 10px to 5px */
@@ -183,7 +184,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     display: flex;
   }
 }
-/* About Section - ENHANCED FOR VISUAL IMPACT */
+/* About Section */
 #about {
   padding: 1.4rem 1rem;
   position: relative;
@@ -208,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-style: italic;
   color: var(--accent-green);
 }
-/* FIX 2: Ensure sign-up button text stays on one line on mobile */
+
 .signup-button {
   display: inline-block;
   background-color: #bfbd6e;
@@ -231,6 +232,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
+
 /* Calendar Section */
 #calendar {
   text-align: center;
@@ -280,6 +282,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-right: 8px;
   vertical-align: middle;
 }
+
 /* Form Section */
 .form-title {
   font-size: var(--text-3xl);
@@ -372,6 +375,7 @@ button[type="submit"]:hover {
 button[type="submit"]:active {
   transform: translateY(-1px);
 }
+
 /* Footer */
   
 footer {

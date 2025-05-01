@@ -224,7 +224,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-bottom: 1.2rem;
   line-height: 1.7;
   font-weight: 500;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -234,30 +233,24 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   color: var(--accent-green);
 }
 
-/* FIX 2: Ensure sign-up button text stays on one line on mobile */
-.signup-button {
+/* SIGN UP BUTTON */
+
+.acorn-button {
   display: inline-block;
-  background-color: #bfbd6e;
-  color: #333333;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-family: 'blackest-text', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
+  margin-top: 1.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
-  white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 0.5rem;
-  border: solid #333333;
-  border-width: thin;
 }
 
-.signup-button:hover {
-  background-color: var(--primary-green);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
+.acorn-image {
+  width: 120px;
+  height: auto;
+  transition: all 0.3s ease;
 }
+
+.acorn-button:hover .acorn-image {
+  transform: translateY(-5px) rotate(5deg);
+  filter: drop-shadow(0 8px 15px rgba(142, 161, 89, 0.5));
+  
 
 /* Calendar Section */
 #calendar {

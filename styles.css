@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 /* Header & Navigation */
 .header {
   padding: 8px 15px; /* Reduced padding from 10px to 5px */
-  margin-bottom: 8px; /* Reduced margin from 10px to 5px */
+  margin-bottom: 10px; /* Reduced margin from 10px to 5px */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
   white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   border: solid #333333;
   border-width: thin;
 }

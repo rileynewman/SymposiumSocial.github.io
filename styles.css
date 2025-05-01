@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 .about-description p {
   font-size: var(--text-3xl);
   font-family: "Chau Philomene One", sans-serif;
-  margin-bottom: 0,5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.7;
   font-weight: 500;
 }

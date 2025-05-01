@@ -250,6 +250,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 }
 
 /* Form Section */
+
 .form-title {
   font-size: var(--text-3xl);
   margin-bottom: 1rem;
@@ -349,6 +350,7 @@ button[type="submit"]:active {
 footer {
   background-color: var(--dark-gray);
   color: white;
+  font-family: sans-serfif;
   text-align: center;
   padding: 1rem;
   width: 100%;
@@ -410,6 +412,8 @@ main {
     background-color: rgba(244, 239, 229, 0.95);
     flex-direction: column;
     align-items: center;
+    display: inline-block;
+    text-decoration: none;
     gap: 20px;
     padding: 20px;
     border-radius: 0 0 0 10px;

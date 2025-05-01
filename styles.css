@@ -117,6 +117,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   height: 80px; /* Setting explicit height for header - about half the original size */
   z-index: 100;
 }
+/* Adjust header layout for mobile */
+.header {
+  justify-content: space-between;
+  padding-right: 20px; /* Ensure space for hamburger */
+  overflow: visible; /* Make sure nothing is hidden */
+  
 .logo-image {
   height: 100px; /* Explicitly set height */
   width: auto; /* Maintain aspect ratio */
@@ -133,6 +139,14 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 }
 .nav {
   position: relative;
+}
+/* Position nav to right side explicitly */
+.nav {
+  position: relative;
+  margin-left: auto; /* Push to right */
+  z-index: 101; /* Higher than header */
+}
+
 }
 .nav-links {
   list-style: none;

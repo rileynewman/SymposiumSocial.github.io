@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   cursor: pointer;
   touch-action: manipulation;
 }
+
 #entry-logo {
   width: 320px;
   height: auto;
@@ -104,17 +105,18 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 
 /* Header & Navigation */
 .header {
-  padding: 8px 15px; /* Reduced padding from 10px to 5px */
-  margin-bottom: 3rem; /* Reduced margin from 10px to 5px */
+  padding: 0 15px; 
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333333;
   font-family: "blackest-text", sans-serif;
-  position: sticky;
+  position: fixed; 
   top: 0;
-  height: 80px; /* Setting explicit height for header - about half the original size */
+  left: 0; 
+  right: 0; 
+  height: 80px;
   z-index: 100;
 }
 /* Adjust header layout for mobile */
@@ -396,10 +398,14 @@ footer {
   background-color: var(--dark-gray);
   color: white;
   text-align: center;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem;
   width: 100%;
+  position: fixed; /* Changed from sticky to fixed */
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 75px;
-  z-index: 90; /* Below header but above content */
+  z-index: 90;
 }
 
 /* These additions ensure proper layout */
@@ -407,11 +413,17 @@ body {
   min-height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
+   padding-bottom: 75px; 
+  margin: 0;
+  overflow-x: hidden; 
 }
 
 main {
-  flex: 1; /* This makes main take up all available space, pushing footer down */
-  padding-bottom: 85px; /* Slightly more than footer height to prevent overlap */
+  padding-top: 90px; /* Slightly more than header height */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 155px); /* Viewport height minus header and footer */
 }
 
 /* Responsive styles */
@@ -440,7 +452,19 @@ main {
   }
   
   .nav-links {
-    margin: 0;
+    position: absolute;
+    top: 80px; /* Position right below the header */
+    right: 0;
+    background-color: rgba(244, 239, 229, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
   }
   
   section {

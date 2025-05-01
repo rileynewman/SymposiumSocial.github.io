@@ -361,13 +361,6 @@ footer {
   height: 75px;
   z-index: 90;
 }
-
-.social-links a {
-  font-size: var(--text-xs);
-  font-family: sans-serif;
-  text-decoration: none;
-  display: inline-block;
-}
   
 
 /* These additions ensure proper layout */

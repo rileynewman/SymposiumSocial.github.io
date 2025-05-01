@@ -362,6 +362,14 @@ footer {
   z-index: 90;
 }
 
+.social-links a {
+  font-size: var(--text-xs);
+  font-family: sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+  
+
 /* These additions ensure proper layout */
 body {
   min-height: 100vh; /* Full viewport height */
@@ -412,8 +420,6 @@ main {
     background-color: rgba(244, 239, 229, 0.95);
     flex-direction: column;
     align-items: center;
-    display: inline-block;
-    text-decoration: none;
     gap: 20px;
     padding: 20px;
     border-radius: 0 0 0 10px;

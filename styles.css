@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
   white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 0.4rem;
+  margin-top: 0rem;
   border: solid #333333;
   border-width: thin;
 }

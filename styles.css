@@ -58,7 +58,7 @@ body::before {
   z-index: -1;
 }
 
-h1, h2, h3, h4, h5, h6, .nav-links a {
+h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-family: 'Blackest', sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -120,10 +120,7 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('qsc.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: white;
   font-family: "blackest-text", sans-serif;
   position: sticky;
   top: 0;
@@ -210,22 +207,24 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 
 /* About Section - ENHANCED FOR VISUAL IMPACT */
 #about {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   position: relative;
   z-index: 1;
   min-height: 400px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-style: 'blackest-text', sans-serif;
+  font-family: "Chau Philomene One", sans-serif;
   overflow: hidden;
 }
 
 .about-description p {
-  font-size: var(--text-xl);
+  font-size: var(--text-3xl);
+  font-family: "Chau Philomene One", sans-serif;
   margin-bottom: 1.2rem;
   line-height: 1.7;
   font-weight: 500;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -238,9 +237,9 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
 /* FIX 2: Ensure sign-up button text stays on one line on mobile */
 .signup-button {
   display: inline-block;
-  background-color: var(--accent-green);
-  color: white;
-  padding: 0.8rem 1.5rem;
+  background-color: #bfbd6e;
+  color: #333333;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   text-decoration: none;
   font-family: 'blackest-text', sans-serif;
@@ -249,7 +248,9 @@ h1, h2, h3, h4, h5, h6, .nav-links a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
   white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+  border: solid #333333;
+  border-width: thin;
 }
 
 .signup-button:hover {

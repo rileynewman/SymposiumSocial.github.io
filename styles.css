@@ -1,5 +1,3 @@
-/* Quercus Social Club CSS - Updated */
-
 :root {
   /* Color palette from your logo and leaf images */
   --primary-green-light: #c5d5a3;     /* Light green from gradient */
@@ -20,14 +18,12 @@
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
 }
-
 /* Base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-image: url('hand.jpg'); 
   background-size: cover;
@@ -42,7 +38,6 @@ body {
   background-color: var(--primary-cream);
   min-height: 100vh; /* Ensure body covers full viewport height */
 }
-
 /* FIX 1: Make background image cover entire background */
 body::before {
   content: "";
@@ -57,7 +52,6 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
 h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-family: 'Blackest', sans-serif;
   font-weight: 600;
@@ -67,7 +61,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 .hidden {
   display: none;
 }
-
 #entry-screen {
   position: fixed;
   top: 0;
@@ -88,14 +81,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   cursor: pointer;
   touch-action: manipulation;
 }
-
 #entry-logo {
   width: 320px;
   height: auto;
   animation: spin 6s linear infinite;
   cursor: pointer;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -104,14 +95,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     transform: rotate(360deg);
   }
 }
-
 #entry-screen.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 /* ENTRY SCREEN END */
-
 /* Header & Navigation */
 .header {
   padding: 8px 15px; /* Reduced padding from 10px to 5px */
@@ -127,14 +116,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   height: 80px; /* Setting explicit height for header - about half the original size */
   z-index: 100;
 }
-
 .logo-image {
   height: 100px; /* Explicitly set height */
   width: auto; /* Maintain aspect ratio */
   margin-left: auto;
   margin-right: auto;
 }
-
 .logo {
   flex: 1;
   display: flex;
@@ -143,11 +130,9 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   left: 0;
   right: 0;
 }
-
 .nav {
   position: relative;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -155,14 +140,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin: 0;
   padding: 0;
 }
-
 .nav-links li a {
   text-decoration: none;
   color: #333333;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -170,7 +153,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   gap: 4px;
   z-index: 101;
 }
-
 .hamburger span {
   width: 20px;
   height: 2px; 
@@ -178,12 +160,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
-
   .nav-links {
     position: absolute;
     top: 60px;
@@ -199,12 +179,10 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     display: none;
     z-index: 100;
   }
-
   .nav-links.active {
     display: flex;
   }
 }
-
 /* About Section - ENHANCED FOR VISUAL IMPACT */
 #about {
   padding: 2rem 1rem;
@@ -224,34 +202,36 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-bottom: 1.2rem;
   line-height: 1.7;
   font-weight: 500;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
-
-
 .about-description p:last-child {
   font-weight: 600;
   font-style: italic;
   color: var(--accent-green);
 }
-
-/* SIGN UP BUTTON */
-
-.acorn-button {
+/* FIX 2: Ensure sign-up button text stays on one line on mobile */
+.signup-button {
   display: inline-block;
-  margin-top: 1.5rem;
+  background-color: #bfbd6e;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'blackest-text', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-top: 0.5rem;
+  border: solid #333333;
+  border-width: thin;
 }
-
-.acorn-image {
-  width: 120px;
-  height: auto;
-  transition: all 0.3s ease;
+.signup-button:hover {
+  background-color: var(--primary-green);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
-
-.acorn-button:hover .acorn-image {
-  transform: translateY(-5px) rotate(5deg);
-  filter: drop-shadow(0 8px 15px rgba(142, 161, 89, 0.5));
-  
-
 /* Calendar Section */
 #calendar {
   text-align: center;
@@ -259,13 +239,11 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-right: auto;
   padding: 3rem 1rem;
 }
-
 #calendar h2 {
   font-size: var(--text-3xl);
   margin-bottom: 1.5rem;
   color: var(--accent-green);
 }
-
 .calendar a {
   display: inline-block;
   background-color: var(--primary-green);
@@ -278,14 +256,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-bottom: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-
 .calendar a:hover {
   background-color: var(--accent-green);
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
 }
-
 .upcoming-highlight {
   font-family: 'Blackest', sans-serif;
   font-size: var(--text-lg);
@@ -294,7 +270,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   position: relative;
   display: inline-block;
 }
-
 .upcoming-highlight::before {
   content: "";
   display: inline-block;
@@ -306,7 +281,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-right: 8px;
   vertical-align: middle;
 }
-
 /* Form Section */
 .form-title {
   font-size: var(--text-3xl);
@@ -314,7 +288,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   color: var(--accent-green);
   text-align: center;
 }
-
 .registration-form {
   background-color: white;
   padding: 2rem;
@@ -322,25 +295,21 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--light-gray);
 }
-
 .form-group {
   margin-bottom: 1.5rem;
 }
-
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--dark-gray);
 }
-
 .form-help {
   display: block;
   font-size: var(--text-xs);
   color: var(--medium-gray);
   margin-top: 0.3rem;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -355,7 +324,6 @@ textarea {
   transition: all 0.3s ease;
   background-color: var(--primary-cream);
 }
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -363,29 +331,24 @@ textarea:focus {
   border-color: var(--primary-green);
   box-shadow: 0 0 0 3px rgba(166, 189, 110, 0.2);
 }
-
 input:invalid,
 select:invalid,
 textarea:invalid {
   border-color: #ff6b6b;
 }
-
 input:valid:not(:placeholder-shown),
 select:valid:not([value=""]),
 textarea:valid:not(:placeholder-shown) {
   border-color: #51cf66;
 }
-
 input[type="checkbox"] {
   margin-right: 0.5rem;
   transform: scale(1.2);
 }
-
 .form-group input[type="checkbox"] + label {
   display: inline;
   font-weight: normal;
 }
-
 button[type="submit"] {
   background-color: var(--accent-green);
   color: white;
@@ -402,17 +365,14 @@ button[type="submit"] {
   margin-top: 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 button[type="submit"]:hover {
   background-color: var(--primary-green);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(166, 189, 110, 0.4);
 }
-
 button[type="submit"]:active {
   transform: translateY(-1px);
 }
-
 /* Footer */
 footer {
   background-color: var(--dark-gray);
@@ -426,12 +386,10 @@ footer {
   right: 0;
   height: 75px;
 }
-
 footer p {
   margin-bottom: 0.3rem;
   font-style: italic;
 }
-
 .footer-links, .social-links {
   display: flex;
   justify-content: center;
@@ -439,28 +397,23 @@ footer p {
   margin-top: 1rem;
   flex-wrap: wrap;
 }
-
 .footer-links a, .social-links a {
   color: var(--primary-cream);
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: var(--text-xs);
 }
-
 .footer-links a:hover, .social-links a:hover {
   color: var(--primary-green-light);
 }
-
 .social-links {
   margin-top: 0.8rem;
 }
-
 .social-links a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
 }
-
 /* Responsive styles */
 @media (min-width: 768px) {
   .center-stuff {
@@ -492,7 +445,6 @@ footer p {
     padding: 1rem 3rem;
   }
 }
-
 @media (max-width: 767px) {
   .about-description {
     padding: 1.5rem;
@@ -506,21 +458,17 @@ footer p {
     font-size: var(--text-xl);
   }
 }
-
 ::-webkit-scrollbar-track {
   background: var(--primary-cream);
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-green);
   border-radius: 5px;
   border: 3px solid var(--primary-cream);
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--accent-green);
 }
-
 /* Selection styling */
 ::selection {
   background-color: var(--primary-green-light);

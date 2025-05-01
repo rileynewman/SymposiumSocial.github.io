@@ -398,9 +398,6 @@ footer {
   text-align: center;
   padding: 0.5rem 0.5rem;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 75px;
   z-index: 90; /* Below header but above content */
 }

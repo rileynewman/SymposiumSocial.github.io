@@ -256,17 +256,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 /* END ABOUT SECTION */
 
 /*ABOUT US SECTION*/
-.about-us-container {
-  padding: 1.4rem 1rem;
-  position: relative;
-  z-index: 1;
-  min-height: 400px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Chau Philomene One", sans-serif;
-  overflow: hidden;
-}
 
 .about-us-description p {
   font-size: var(--text-3xl);

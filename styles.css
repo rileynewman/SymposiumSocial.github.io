@@ -248,9 +248,8 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 #about-us-container {
   padding: 3rem 1rem
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   text-align: center;
-  background-image: url("digi-tree.jpg");
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.2);
 }
 
@@ -261,10 +260,11 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   color: var(--dark-gray);
   margin-bottom: 1.5rem;
   font-weight: 600;
+  background-color: white;
 }
 
 #about-us-discription p:last-child {
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: 700;
   color: var(--accent-green);
 }

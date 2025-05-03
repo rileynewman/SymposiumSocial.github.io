@@ -261,16 +261,16 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin-bottom: 1.5rem;
   font-weight: 600;
   background-color: white;
-  border: thin solid var(--primary-green);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #about-us-discription p:last-child {
   font-size: var(--text-2xl);
-  font-weight: 700;
+  font-weight: 700
+  color: var(--primary-green);
 }
 
-.highlight {
-  color: var(--primary-green-light);
 
 @media (max-width: 768px) {
   #about-us-container {

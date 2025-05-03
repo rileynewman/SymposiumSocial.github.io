@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quercus Social Club</title>
   <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
@@ -20,12 +23,13 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+  
+    
      <!-- ENTRY SPLASH SCREEN -->
     <div id="entry-screen">
       <img src="QuercusLogo-trans.svg" alt="Quercus Logo" id="entry-logo" />
     </div>
     <div style="flex: 1;"></div> 
-
     <!-- MAIN CONTENT -->
   <header class="header">
     <div class="logo">
@@ -33,8 +37,8 @@
     </div>
     <nav class="nav">
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
         <li><a href="register.html">Register</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -57,21 +61,14 @@
   </main>
   
   <footer>
-    <p>© 2025 Quercus Social Club. Branch out.</p>
-    <div class="footer-links">
-      <a href="contact.html">Contact Us</a>
-    </div>
-    <div class="social-links">
-      <a href="https://instagram.com/quercussocial" aria-label="Follow us on Instagram">Instagram</a>
-    </div>
+    <p>© 2025 Quercus Social Club</p>
   </footer>
-
+  
   <script>
     // Improved JavaScript for hamburger menu
     document.addEventListener('DOMContentLoaded', function() {
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
-
       // Toggle menu on hamburger click
       hamburger.addEventListener("click", function() {
         navLinks.classList.toggle("active");
@@ -108,11 +105,9 @@
     });
     
     const entryScreen = document.getElementById('entry-screen');
-
     function hideEntryScreen() {
       entryScreen.classList.add('hidden');
     }
-
     entryScreen.addEventListener('click', hideEntryScreen);
     entryScreen.addEventListener('touchstart', hideEntryScreen);
   </script>

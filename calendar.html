@@ -20,157 +20,16 @@
   </head>
 
   <body>
-    <!-- Hero Section with Logo -->
-    <section id="hero" class="section">
-      <div class="container">
-        <img src="QuercusLogo-trans.svg" alt="Quercus Social Club logo with acorn" class="logo fade-in">
-        
-        <div class="nav-links fade-in-delayed">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#calendar" class="nav-link">Calendar</a>
-          <a href="#register" class="nav-link">Register</a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="about-container">
-        <h2 class="section-title sketchy-title">Branch Out</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>Quercus Social Club is a community for 20-somethings looking to branch out, meet new people, and create genuine connections in a laid-back environment.</p>
-            <p>Named after the oak tree genus, we believe in growing strong roots in our community while reaching out to explore new experiences.</p>
-          </div>
-          <div class="about-image">
-            <img src="about-image.jpg" alt="People at Quercus Social Club event" class="sketchy-border">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Calendar Section -->
-    <section id="calendar" class="section">
-      <div class="calendar-container">
-        <h2 class="section-title sketchy-title">Upcoming Events</h2>
-        
-        <div class="events-list">
-          <div class="event-card">
-            <div class="event-date">
-              <span class="month">May</span>
-              <span class="day">15</span>
-            </div>
-            <div class="event-details">
-              <h3>Forest Hike &amp; Picnic</h3>
-              <p>Join us for a relaxed hike through Oak Grove followed by a community picnic.</p>
-              <p class="event-location">📍 Oak Grove Park, 10am</p>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <div class="event-date">
-              <span class="month">May</span>
-              <span class="day">22</span>
-            </div>
-            <div class="event-details">
-              <h3>Art Night: Nature Sketching</h3>
-              <p>Bring your sketchbooks! We're embracing our artistic side with nature-inspired drawing.</p>
-              <p class="event-location">📍 The Green Studio, 7pm</p>
-            </div>
-          </div>
-          
-          <div class="event-card">
-            <div class="event-date">
-              <span class="month">Jun</span>
-              <span class="day">3</span>
-            </div>
-            <div class="event-details">
-              <h3>Community Potluck</h3>
-              <p>Share your favorite dish and stories around our community table.</p>
-              <p class="event-location">📍 Acorn Hall, 6:30pm</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Registration Section -->
-    <section id="register" class="section">
-      <div class="registration-container">
-        <h2 class="section-title sketchy-title">Join Our Club</h2>
-        
-        <form class="registration-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          
-          <div class="form-group">
-            <label for="age">Age</label>
-            <input type="number" id="age" name="age" min="18" max="35">
-          </div>
-          
-          <div class="form-group">
-            <label for="interests">What interests you about our club?</label>
-            <textarea id="interests" name="interests" rows="3"></textarea>
-          </div>
-          
-          <button type="submit" class="submit-btn">Branch Out With Us</button>
-        </form>
-      </div>
-    </section>
-    
-    <footer>
-      <p>© 2025 Quercus Social Club</p>
-      <div class="social-links">
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Twitter</a>
-      </div>
-    </footer>
-    
-    <script>
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-          });
-        });
-      });
-      
-      // Add animation class when elements come into view
-      const observerOptions = {
-        threshold: 0.1
-      };
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('appear');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-      
-      document.querySelectorAll('.section > div').forEach(el => {
-        observer.observe(el);
-      });
-    </script>
+   <div class="calendar">
+    <h1 class="calendar-title">Upcoming Events</h1>
+     <iframe 
+       src="https://calendar.google.com/calendar/embed?src=fc46805192438ed9ac0835f106595a34f73517f599434cdfa1d8eb2ebfb1ee03%40group.calendar.google.com&ctz=America%2FChicago" 
+       style="border: 0" width="100%" 
+       height="600" 
+       frameborder="0" 
+       scrolling="no">
+       
+       </iframe>
+   </div>
   </body>
 </html>

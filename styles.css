@@ -1,14 +1,11 @@
-/* Quercus Social Club CSS - Updated */
-
 :root {
-  /* Color palette from your logo and leaf images */
-  --primary-green-light: #c5d5a3;     /* Light green from gradient */
-  --primary-green: #a6bd6e;           /* Medium green from leaves */
-  --primary-cream: #f6f5f0;           /* Background cream color */
-  --dark-gray: #333333;               /* Text dark gray from logo */
-  --medium-gray: #666666;             /* Medium gray for secondary text */
-  --light-gray: #e0dfd9;              /* Light gray for borders */
-  --accent-green: #8ea159;            /* Deeper green for accents */
+  --primary-green-light: #c5d5a3;     /* Light green  */
+  --primary-green: #a6bd6e;           /* Medium green */
+  --primary-cream: #f6f5f0;           /* Background cream  */
+  --dark-gray: #333333;               /* dark gray */
+  --medium-gray: #666666;             /* Medium gray  */
+  --light-gray: #e0dfd9;              /* Light gray  */
+  --accent-green: #8ea159;            /* Deeper green */
   
   /* Font sizes */
   --text-xs: 0.75rem;
@@ -20,14 +17,12 @@
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
 }
-
-/* Base styles */
+/* BASE STYLES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-image: url('hand.jpg'); 
   background-size: cover;
@@ -40,10 +35,9 @@ body {
   position: relative;
   text-align: center;
   background-color: var(--primary-cream);
-  min-height: 100vh; /* Ensure body covers full viewport height */
+  min-height: 100vh; 
 }
 
-/* FIX 1: Make background image cover entire background */
 body::before {
   content: "";
   position: fixed;
@@ -57,17 +51,18 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
 h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-family: 'Blackest', sans-serif;
   font-weight: 600;
   line-height: 1.2;
 }
-/* Entry screen */
+/* END BASE STYLES */
+
+
+/* ENTRY SCREEN */
 .hidden {
   display: none;
 }
-
 #entry-screen {
   position: fixed;
   top: 0;
@@ -95,7 +90,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   animation: spin 6s linear infinite;
   cursor: pointer;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -104,7 +98,6 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     transform: rotate(360deg);
   }
 }
-
 #entry-screen.hidden {
   opacity: 0;
   visibility: hidden;
@@ -112,29 +105,35 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 }
 /* ENTRY SCREEN END */
 
-/* Header & Navigation */
+/* HEADER AND NAVIGATION */
 .header {
-  padding: 8px 15px; /* Reduced padding from 10px to 5px */
-  margin-bottom: 8px; /* Reduced margin from 10px to 5px */
+  padding: 0 15px; 
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #333333;
   font-family: "blackest-text", sans-serif;
-  position: sticky;
+  position: fixed; 
   top: 0;
-  height: 80px; /* Setting explicit height for header - about half the original size */
+  left: 0; 
+  right: 0; 
+  height: 80px;
   z-index: 100;
 }
-
+/* HEADER FOR MOBILE */
+.header {
+  justify-content: space-between;
+  padding-right: 20px; 
+  overflow: visible; 
+  }
+  
 .logo-image {
   height: 100px; /* Explicitly set height */
-  width: auto; /* Maintain aspect ratio */
+  width: auto; 
   margin-left: auto;
   margin-right: auto;
 }
-
 .logo {
   flex: 1;
   display: flex;
@@ -143,11 +142,17 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   left: 0;
   right: 0;
 }
-
 .nav {
   position: relative;
 }
 
+.nav {
+  position: relative;
+  margin-left: auto; 
+  z-index: 101; 
+}
+
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -155,14 +160,12 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   margin: 0;
   padding: 0;
 }
-
 .nav-links li a {
   text-decoration: none;
   color: #333333;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -170,20 +173,17 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   gap: 4px;
   z-index: 101;
 }
-
 .hamburger span {
   width: 20px;
   height: 2px; 
-  background-color: #333333;
+  background-color: #f6f5f0;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
-
   .nav-links {
     position: absolute;
     top: 60px;
@@ -199,15 +199,16 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
     display: none;
     z-index: 100;
   }
-
   .nav-links.active {
     display: flex;
   }
 }
 
-/* About Section - ENHANCED FOR VISUAL IMPACT */
+/* END HEADER */
+
+/* ABOUT SECTION */
 #about {
-  padding: 2rem 1rem;
+  padding: 1.4rem 1rem;
   position: relative;
   z-index: 1;
   min-height: 400px; 
@@ -221,23 +222,19 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 .about-description p {
   font-size: var(--text-3xl);
   font-family: "Chau Philomene One", sans-serif;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
   line-height: 1.7;
   font-weight: 500;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
-
-
 .about-description p:last-child {
   font-weight: 600;
   font-style: italic;
   color: var(--accent-green);
 }
 
-/* FIX 2: Ensure sign-up button text stays on one line on mobile */
 .signup-button {
   display: inline-block;
-  background-color: #bfbd6e;
+  background: linear-gradient(to right,  #bebc6e, #d0e4cc);
   color: #333333;
   padding: 0.5rem 1rem;
   border-radius: 30px;
@@ -248,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(142, 161, 89, 0.3);
   white-space: nowrap; /* Prevent text wrapping */
-  margin-top: 0.5rem;
+  margin-top: 0rem;
   border: solid #333333;
   border-width: thin;
 }
@@ -258,217 +255,136 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
+/* END ABOUT SECTION */
 
-/* Calendar Section */
-#calendar {
+/*ABOUT US SECTION*/
+#about-us-container {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3rem 1rem;
-}
-
-#calendar h2 {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-}
-
-.calendar a {
-  display: inline-block;
-  background-color: var(--primary-green);
-  color: var(--dark-gray);
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.calendar a:hover {
-  background-color: var(--accent-green);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(142, 161, 89, 0.3);
-}
-
-.upcoming-highlight {
-  font-family: 'Blackest', sans-serif;
-  font-size: var(--text-lg);
-  color: var(--accent-green);
-  margin-top: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-
-.upcoming-highlight::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url('acorn-icon.png'); /* Create a small acorn icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-/* Form Section */
-.form-title {
-  font-size: var(--text-3xl);
-  margin-bottom: 1.5rem;
-  color: var(--accent-green);
-  text-align: center;
-}
-
-.registration-form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid var(--light-gray);
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--dark-gray);
-}
-
-.form-help {
-  display: block;
-  font-size: var(--text-xs);
-  color: var(--medium-gray);
-  margin-top: 0.3rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 2px solid var(--light-gray);
-  border-radius: 8px;
-  font-family: "source-serif-pro", serif;
-  font-size: var(--text-base);
-  transition: all 0.3s ease;
   background-color: var(--primary-cream);
+  border: 3px solid var(--accent-green);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(142, 161, 89, 0.2);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--primary-green);
-  box-shadow: 0 0 0 3px rgba(166, 189, 110, 0.2);
-}
-
-input:invalid,
-select:invalid,
-textarea:invalid {
-  border-color: #ff6b6b;
-}
-
-input:valid:not(:placeholder-shown),
-select:valid:not([value=""]),
-textarea:valid:not(:placeholder-shown) {
-  border-color: #51cf66;
-}
-
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-  transform: scale(1.2);
-}
-
-.form-group input[type="checkbox"] + label {
-  display: inline;
-  font-weight: normal;
-}
-
-button[type="submit"] {
-  background-color: var(--accent-green);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-family: 'Unbounded', sans-serif;
-  font-size: var(--text-lg);
+#about-us-discription p {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: var(--text-2xl);
+  line-height: 1.8;
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem;
   font-weight: 600;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: block;
+}
+
+#about-us-discription p:first-child {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--accent-green);
+}
+
+@media (max-width: 768px) {
+  #about-us-container {
+    padding: 2rem 1rem;
+  }
+
+  #about-us-discription p {
+    font-size: var(--text-lg);
+  }
+
+  #about-us-discription p:first-child {
+    font-size: var(--text-xl);
+  }
+}
+
+
+/* END ABOUT US */
+
+/* CALENDAR SECTION */
+.calendar {
+  position: relative;
   width: 100%;
-  margin-top: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 700px; /* Adjust based on your layout */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-button[type="submit"]:hover {
-  background-color: var(--primary-green);
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(166, 189, 110, 0.4);
+.calendar iframe {
+  width: 100%;
+  height: 100vh; 
+  border: none;
+}
+/* END CALENDAR */
+
+/* FORM SECTION */
+
+.form-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Adjust based on your layout */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-button[type="submit"]:active {
-  transform: translateY(-1px);
+.form-container iframe {
+  width: 100%;
+  height: 100vh; /* Makes sure it fills the viewport height on mobile */
+  border: none;
 }
+/* END FORM SECTION */
 
-/* Footer */
+/* FOOTER */
+  
 footer {
   background-color: var(--dark-gray);
   color: white;
+  font-family: sans-serfif;
   text-align: center;
-  padding: 0.5rem 0.5rem;
-  margin-top: 3rem;
-  position: fixed; 
+  padding: 1rem;
+  width: 100%;
+  position: fixed; /* Changed from sticky to fixed */
   bottom: 0;
   left: 0;
   right: 0;
   height: 75px;
+  z-index: 90;
 }
-
-footer p {
-  margin-bottom: 0.3rem;
-  font-style: italic;
-}
-
-.footer-links, .social-links {
+  
+body {
+  min-height: 100vh; 
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+   padding-bottom: 75px; 
+  margin: 0;
+  overflow-x: hidden; 
 }
 
-.footer-links a, .social-links a {
-  color: var(--primary-cream);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: var(--text-xs);
+main {
+  padding-top: 90px; /* Slightly more than header height */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 155px); /* Viewport height minus header and footer */
 }
-
-.footer-links a:hover, .social-links a:hover {
-  color: var(--primary-green-light);
-}
-
-.social-links {
-  margin-top: 0.8rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-}
+/* END FOOTER */
 
 /* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 0rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: contain;
+  }
+}
+
 @media (min-width: 768px) {
   .center-stuff {
     flex-direction: row;
@@ -481,7 +397,19 @@ footer p {
   }
   
   .nav-links {
-    margin: 0;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    background-color: rgba(244, 239, 229, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
   }
   
   section {
@@ -499,7 +427,6 @@ footer p {
     padding: 1rem 3rem;
   }
 }
-
 @media (max-width: 767px) {
   .about-description {
     padding: 1.5rem;
@@ -512,23 +439,8 @@ footer p {
   .about-description p:first-child {
     font-size: var(--text-xl);
   }
-}
 
-::-webkit-scrollbar-track {
-  background: var(--primary-cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-green);
-  border-radius: 5px;
-  border: 3px solid var(--primary-cream);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--accent-green);
-}
-
-/* Selection styling */
+/* SELECTION STYLING */
 ::selection {
   background-color: var(--primary-green-light);
   color: var(--dark-gray);

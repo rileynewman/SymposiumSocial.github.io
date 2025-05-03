@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 
 /* END HEADER */
 
-/* ABOUT SECTION */
+/* HOMEPAGE */
 #about {
   padding: 1.4rem 1rem;
   position: relative;
@@ -242,17 +242,15 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.4);
 }
-/* END ABOUT SECTION */
+/* END HOMEPAGE */
 
 /*ABOUT US SECTION*/
 #about-us-container {
-  padding: 4rem 2rem;
+  padding: 3rem 1rem
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   text-align: center;
   background-image: url("digi-tree.jpg");
-  border: 3px solid var(--accent-green);
-  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.2);
 }
 
@@ -265,7 +263,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   font-weight: 600;
 }
 
-#about-us-discription p:first-child {
+#about-us-discription p:last-child {
   font-size: var(--text-3xl);
   font-weight: 700;
   color: var(--accent-green);

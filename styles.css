@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
 #about-us-container {
   padding: 3rem 1rem
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 30% auto;
   text-align: center;
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.2);
 }

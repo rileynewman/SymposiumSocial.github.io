@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6, p, .nav-links a {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--primary-cream);
+  background-image: url("digi-tree.jpg");
   border: 3px solid var(--accent-green);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(142, 161, 89, 0.2);
